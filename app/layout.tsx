@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Purple Connect",
-  description: "Find four challening groups of four! The themes for each group are related",
+  description: "Find four challening groups of four! The themes for each group are related.",
 };
 
 export default function RootLayout({

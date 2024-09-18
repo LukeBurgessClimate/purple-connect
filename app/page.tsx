@@ -49,11 +49,11 @@ export default function Home() {
 
     switch (result.result) {
       case "same":
-        showPopup("You've already guessed that!");
+        showPopup("Previously guessed");
         break;
       case "one-away":
         animateWrongGuess();
-        showPopup("One away...");
+        showPopup("One misfit");
         break;
       case "loss":
         showPopup("Better luck next time!");
