@@ -49,11 +49,11 @@ export default function Home() {
 
     switch (result.result) {
       case "same":
-        showPopup("You've already guessed that!");
+        showPopup("Previously guessed");
         break;
       case "one-away":
         animateWrongGuess();
-        showPopup("One away...");
+        showPopup("One misfit");
         break;
       case "loss":
         showPopup("Better luck next time!");
@@ -134,7 +134,7 @@ export default function Home() {
           Connections
         </h1>
         <hr className="mb-4 md:mb-4 w-full"></hr>
-        <h1 className="text-black mb-4">Create four groups of four!</h1>
+        <h1 className="text-black mb-4">Find four challening groups of four! The themes for each group are related.</h1>
         <div className="relative w-full">
           <Popup show={popupState.show} message={popupState.message} />
           <Grid
